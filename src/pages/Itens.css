@@ -1,0 +1,12 @@
+div.center {
+    text-align: center;
+    background-color: darkgreen;
+}
+
+input.login {
+    background-color: #555555;
+    border-radius: 6px;
+    padding: 14px 40px;
+    font-size: 20px;
+    margin: 12px;
+}
