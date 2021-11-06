@@ -1,5 +1,11 @@
 {
-    "users": [],
+    "users": [
+        {
+            "id": 0,
+            "usuario": "admin",
+            "senha": "123"
+        }
+    ],
     "times": []
 
 }
