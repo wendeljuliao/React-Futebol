@@ -8,7 +8,8 @@ import CardTime from './components/CardTime';
 function App() {
   return (
     <Router>
-      <Login/>
+      <CardTime/>
+      <CardTime/>
       <Routes>
         <Route exact path="/" component={Login}/>
 
