@@ -8,11 +8,6 @@
   ],
   "times": [
     {
-      "nome": "fgfg23",
-      "dataCriacao": "ffg23",
-      "id": 6
-    },
-    {
       "nome": "aas",
       "dataCriacao": "ass",
       "id": 7
@@ -23,9 +18,19 @@
       "id": 8
     },
     {
-      "nome": "zzz",
-      "dataCriacao": "zzaas",
-      "id": 9
+      "nome": "alo",
+      "dataCriacao": "aloooaa",
+      "id": 13
+    },
+    {
+      "nome": "az",
+      "dataCriacao": "az",
+      "id": 15
+    },
+    {
+      "nome": "am",
+      "dataCriacao": "aza",
+      "id": 16
     }
   ]
 }

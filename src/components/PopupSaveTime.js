@@ -4,9 +4,8 @@ import React from 'react';
 
 export default function PopupSaveTime() {
 
-    function salvarTime() {
-
-    }
+    const [time, setTime] = useState('')
+    const [dataCriacao, setDataCriacao] = useState('')
 
     return (
         <form onSubmit={() => salvarTime()}>
