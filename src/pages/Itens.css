@@ -3,6 +3,11 @@ div.center {
     background-color: darkgreen;
 }
 
+div.Side {
+    display: inline-block;
+
+}
+
 input.login {
     background-color: #555555;
     border-radius: 6px;

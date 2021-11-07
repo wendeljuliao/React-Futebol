@@ -9,11 +9,11 @@ export default function CardTime(props) {
         <div class="new_margin">
 		<Card>
 			<Card.Body>
-				<Card.Title>props.nome_time</Card.Title>
+				<Card.Title>{props.nome_time}</Card.Title>
 				<Card.Text>
-					props.descricao
+					{props.descricao}
                 </Card.Text>
-				<Button variant="primary">Adicionar Jogador</Button>
+				<Button variant="danger">Apagar Time</Button>
 			</Card.Body>
 		</Card>
         </div>
