@@ -18,7 +18,7 @@ export default function CardTime(props) {
 
 	return (
 
-		<Card style={{display: 'flex', justifyContent: 'center'}}>
+		<Card style={{display: 'flex'}}>
 			<Card.Body>
 				<Card.Title>{props.nome_time}</Card.Title>
 				<Card.Text>

@@ -22,7 +22,7 @@ export default function Home() {
 
     return (
 
-        <div className="Side">
+        <div className="container2">
             {cards.map((card) => <CardTime key={card.id} id={card.id} nome_time={card.nome} dataCriacao={card.dataCriacao} setIsDelete={setIsDelete} />)}
 
         </div>
