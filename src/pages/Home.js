@@ -19,14 +19,14 @@ export default function Home() {
         <div id="id_home" class="Side">
 
         <label>Nome do Time</label>
-        <input type="text" id="id_Time" name="n_Time" padding="4px"
+        <input type="text" id="id_Time" name="n_Time" 
 
             value={time}
             onChange={(e) => setTime(e.target.value)}
 
         ></input>
         <label>Descricao do Time</label>
-        <input type="text" id="id_Descricao" name="n_Descricao" style={{padding:"8px"}}
+        <input type="text" id="id_Descricao" name="n_Descricao" 
 
             value={descricao}
             onChange={(e) => setDescricao(e.target.value)}
