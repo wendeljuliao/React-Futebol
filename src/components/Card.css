@@ -1,3 +1,14 @@
-div.new_margin {
+.card {
+    display: 'flex';
     margin: 12px;
+    width: 800px;
+    height: 150px;
+    
+    position: relative;
+}
+
+.cardsec {
+    display: 'flex';
+
+    
 }

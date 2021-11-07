@@ -1,20 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Login from './pages/Login';
 import Home from './pages/Home';
-import CardTime from './components/CardTime';
 
 function App() {
   return (
     <Router>
-      <Login/>
-      <Home/>
-      <CardTime nome_time="Fortaleza" descricao="sim"/>
+      
       <Routes>
-        <Route exact path="/" component={Login}/>
+        <Route exact path="/" element={<Login />}/>
 
-        <Route exact path="/home" component={Home}/>
+        <Route path="/home" element={<Home />}/>
 
       </Routes>
 

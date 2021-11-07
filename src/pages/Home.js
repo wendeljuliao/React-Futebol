@@ -1,44 +1,30 @@
-import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { NavDropdown } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
 import CardTime from '../components/CardTime';
+import './Home.css'
+
+import axios from 'axios'
 
 export default function Home() {
-    
-    const [time, setTime] = useState('');
-    const [descricao, setDescricao] = useState('');
 
-    function addCard(){
-        console.log(time)
-        console.log(descricao)
-    }
+    const [cards, setCards] = useState([]);
+
+    const [isDelete, setIsDelete] = useState(false)
+
+    useEffect(() => {
+        axios.get('http://localhost:3001/times')
+            .then((res) => setCards(res.data))
+
+        setIsDelete(false)
+    }, [isDelete]);
+
+   
 
 
     return (
-        
-        <div id="id_home" class="Side">
 
-        <label>Nome do Time</label>
-        <input type="text" id="id_Time" name="n_Time" 
+        <div className="Side">
+            {cards.map((card) => <CardTime key={card.id} id={card.id} nome_time={card.nome} dataCriacao={card.dataCriacao} setIsDelete={setIsDelete} />)}
 
-            value={time}
-            onChange={(e) => setTime(e.target.value)}
-
-        ></input>
-        <label>Descricao do Time</label>
-        <input type="text" id="id_Descricao" name="n_Descricao" 
-
-            value={descricao}
-            onChange={(e) => setDescricao(e.target.value)}
-
-        ></input>
-
-
-            <input type="submit" value="Cadastrar Time" className="login"
-
-            onClick={(e) => { }}
-
-            ></input>
         </div>
     )
 }

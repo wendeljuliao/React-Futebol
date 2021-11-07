@@ -1,19 +1,47 @@
+.container {
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
 div.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: darkgreen;
+    width: 70%;
+    height: 50%;
+    border-radius: 30px;
 }
 
 div.Side {
     display: inline-block;
 
 }
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.labels {
+    font-size: 20px;
+    color: white;
+}
 
 input.login {
-    background-color: #555555;
+    background-color: rgb(30, 63, 30);
     border-radius: 6px;
-    padding: 14px 40px;
+    padding: 8px 20px;
     font-size: 20px;
     margin: 12px;
+    color: white;
 }
 
 CardTime.magin {

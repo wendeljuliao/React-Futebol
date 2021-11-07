@@ -1,11 +1,21 @@
 {
-    "users": [
-        {
-            "id": 0,
-            "usuario": "admin",
-            "senha": "123"
-        }
-    ],
-    "times": []
-
+  "users": [
+    {
+      "id": 0,
+      "usuario": "admin",
+      "senha": "123"
+    }
+  ],
+  "times": [
+    {
+      "nome": "aa1",
+      "dataCriacao": "aa1",
+      "id": 5
+    },
+    {
+      "nome": "fgfg2",
+      "dataCriacao": "ffg2",
+      "id": 6
+    }
+  ]
 }
