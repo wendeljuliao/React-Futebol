@@ -6,6 +6,8 @@ import './Card.css'
 
 import axios from 'axios'
 
+import api from '../services/index';
+
 export default function CardTime(props) {
 
 
@@ -16,9 +18,21 @@ export default function CardTime(props) {
 		props.setIsDelete(true)
 	}
 
+	function searchDataCEP() {
+		if (props.CEP.length == 8) {
+			api.get(props.CEP)
+				.then((res) => {
+					console.log(JSON.stringify(res.data.return))
+					props.setDataCEP(JSON.stringify(res.data.return))
+					props.setIsModalCEP(true)
+				})
+		}
+	}
+
+
 	return (
 
-		<Card style={{display: 'flex'}}>
+		<Card style={{ display: 'flex' }}>
 			<Card.Body>
 				<Card.Title>{props.nome_time}</Card.Title>
 				<Card.Text>
@@ -26,6 +40,7 @@ export default function CardTime(props) {
 				</Card.Text>
 				<Button variant="danger" onClick={() => apagarTime()}>Apagar Time</Button>
 			</Card.Body>
+			<img className="search" src='/search.png' alt="" onClick={() => searchDataCEP()} />
 		</Card>
 
 	)

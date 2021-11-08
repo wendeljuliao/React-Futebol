@@ -5,3 +5,10 @@
     height: 150px;
     
 }
+
+.search {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 0;
+}

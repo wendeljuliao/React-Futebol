@@ -8,29 +8,16 @@
   ],
   "times": [
     {
-      "nome": "aas",
-      "dataCriacao": "ass",
-      "id": 7
+      "nome": "www",
+      "dataCriacao": "23",
+      "CEP": "60125025",
+      "id": 17
     },
     {
-      "nome": "zz",
-      "dataCriacao": "zz",
-      "id": 8
-    },
-    {
-      "nome": "alo",
-      "dataCriacao": "aloooaa",
-      "id": 13
-    },
-    {
-      "nome": "az",
-      "dataCriacao": "az",
-      "id": 15
-    },
-    {
-      "nome": "am",
-      "dataCriacao": "aza",
-      "id": 16
+      "nome": "ass",
+      "dataCriacao": "asas",
+      "CEP": "60125020",
+      "id": 18
     }
   ]
 }
