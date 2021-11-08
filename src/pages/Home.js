@@ -46,7 +46,7 @@ export default function Home() {
 
 
     return (
-
+        
         <div className="container2">
             {cards.map((card) => <CardTime key={card.id} id={card.id} nome_time={card.nome} dataCriacao={card.dataCriacao} setIsDelete={setIsDelete} CEP={card.CEP} setDataCEP={setDataCEP} setIsModalCEP={setIsModalCEP} />)}
 
@@ -63,27 +63,27 @@ export default function Home() {
                             <div style={{ width: '100%' }}>
                                 <div className="inputField d-flex align-items-start flex-column py-3">
                                     <label className="labels">Nome do time</label>
-                                    <input value={time} required type="text" onChange={(e) => setTime(e.target.value)} style={{ width: "100%" }} />
+                                    <input value={time} required type="text" onChange={(e) => setTime(e.target.value)} className='prop_up' style={{ width: "100%" }} />
                                 </div>
                                 <div className="inputField d-flex align-items-start flex-column py-3">
                                     <label className="labels">Data de criação do Time</label>
-                                    <input value={dataCriacao} required type="text" onChange={(e) => setDataCriacao(e.target.value)} style={{ width: "100%" }} />
+                                    <input value={dataCriacao} required type="text" onChange={(e) => setDataCriacao(e.target.value)} className='prop_up' style={{ width: "100%" }} />
                                 </div>
                                 <div className="inputField d-flex align-items-start flex-column py-3">
                                     <label className="labels">CEP</label>
-                                    <input value={CEP} required type="text" onChange={(e) => setCEP(e.target.value)} style={{ width: "100%" }} />
+                                    <input value={CEP} required type="text" onChange={(e) => setCEP(e.target.value)} className='prop_up' style={{ width: "100%" }} />
                                 </div>
                             </div>
                         </div>
                         <div className="w-100 d-flex justify-content-center align-items-center">
                             <input type="submit" style={{
-                                backgroundColor: "#1ab26b",
+                                backgroundColor: "#54627B",
                                 border: "none",
                                 padding: '14px 38px',
                                 borderRadius: "50px",
                                 fontSize: 'medium',
                                 fontWeight: 'bold',
-                                color: 'black',
+                                color: '#EDF2F3',
                             }} value="Salvar" />
                         </div>
                     </form>

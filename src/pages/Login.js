@@ -30,22 +30,24 @@ export default function Login() {
 
 
     return (
-        <div className="container">
-            <div className="center">
-                <h1 style={{ color: 'white' }}>Sistema de Cadastro de Times</h1>
-                <form className="form" onSubmit={(e) => entrar(e)}>
-                    <label className="labels">Nome de usuario:</label>
-                    <input type="text" id="id_Usuario" name="n_Usuario"
-                        value={usuario}
-                        onChange={(e) => setUsuario(e.target.value)} />
-                    <label className="labels">Senha:</label>
-                    <input type="password" id="id_Senha" name="n_senha"
-                        value={senha}
-                        onChange={(e) => setSenha(e.target.value)} />
-                    <input type="submit"
-                        onClick={(e) => { console.log(usuario) }}
-                        value="Entrar" className="login" />
-                </form>
+        <div className="background">
+            <div className="container">
+                <div className="center">
+                    <h1 style={{ color: 'white' }}>Sistema de Cadastro de Times</h1><br/>
+                    <form className="form" onSubmit={(e) => entrar(e)}>
+                        <label className="labels">Nome de usuario:</label>
+                        <input type="text" id="id_Usuario" name="n_Usuario" className="login_campos"
+                            value={usuario}
+                            onChange={(e) => setUsuario(e.target.value)} />
+                        <label className="labels">Senha:</label>
+                        <input type="password" id="id_Senha" name="n_senha" className="login_campos"
+                            value={senha}
+                            onChange={(e) => setSenha(e.target.value)} />
+                        <input type="submit"
+                            onClick={(e) => { console.log(usuario) }}
+                            value="Entrar" className="login" />
+                    </form>
+                </div>
             </div>
         </div>
     )

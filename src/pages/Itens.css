@@ -13,7 +13,9 @@ div.center {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: darkgreen;
+    background-color: #54627B
+
+    ;
     width: 70%;
     height: 50%;
     border-radius: 30px;
@@ -33,18 +35,45 @@ div.Side {
 
 .labels {
     font-size: 20px;
-    color: white;
+    color: #EDF2F3;
+    ;
 }
 
 input.login {
-    background-color: rgb(30, 63, 30);
+    background-color: #1F3541;
     border-radius: 6px;
-    padding: 8px 20px;
+    padding: 12px 36px;
     font-size: 20px;
-    margin: 12px;
-    color: white;
+    margin: 20px;
+    color: #EDF2F3
+
+    ;
 }
 
 CardTime.magin {
     margin: 12px;
+}
+
+input.login_campos {
+    background-color: #54627B;
+    color: #EDF2F3;
+    border: none;
+    border-bottom: 2px solid #1F3541;
+}
+
+input.prop_up {
+    background-color: #1F3541;
+    color: #EDF2F3;
+    border: none;
+    border-bottom: 2px solid #54627B;
+    width: "100%"
+}
+
+div.background {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F3541;
 }
