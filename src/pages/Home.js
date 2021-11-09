@@ -21,6 +21,8 @@ export default function Home() {
     const [isModalCEP, setIsModalCEP] = useState(false)
     const [dataCEP, setDataCEP] = useState({})
 
+
+
     useEffect(() => {
         axios.get('http://localhost:3001/times')
             .then((res) => setCards(res.data))
@@ -38,6 +40,11 @@ export default function Home() {
         axios.post('http://localhost:3001/times', data)
             .then((res) => console.log(res.data))
 
+
+        setTime('')
+        setDataCriacao('')
+        setCEP('')
+
         setIsSave(true)
         setIsModalVisible(false)
 
@@ -46,9 +53,9 @@ export default function Home() {
 
 
     return (
-        
+
         <div className="container2">
-            {cards.map((card) => <CardTime key={card.id} id={card.id} nome_time={card.nome} dataCriacao={card.dataCriacao} setIsDelete={setIsDelete} CEP={card.CEP} setDataCEP={setDataCEP} setIsModalCEP={setIsModalCEP} />)}
+            {cards.map((card) => <CardTime key={card.id} id={card.id} time={card.nome} dataCriacao={card.dataCriacao} setIsDelete={setIsDelete} CEP={card.CEP} setDataCEP={setDataCEP} setIsModalCEP={setIsModalCEP} />)}
 
             <a onClick={(e) => { e.preventDefault(); setIsModalVisible(true) }} className="d-flex justify-content-center align-items-center" style={{ padding: '0 0', margin: '5px 10px' }}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" style={{ fill: '#111111' }} viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z" /></svg>
@@ -58,7 +65,13 @@ export default function Home() {
             {isModalVisible ? (
                 <div class="popup-bg" /*id={"popup" + this.props.id}*/ >
                     <form class="escopo-popup" onSubmit={(e) => salvarTime(e)}>
-                        <a id="close" onClick={(e) => { e.preventDefault(); setIsModalVisible(false) }} />
+                        <a id="close" onClick={(e) => {
+                            e.preventDefault();
+                            setTime('')
+                            setDataCriacao('')
+                            setCEP('')
+                            setIsModalVisible(false)
+                        }} />
                         <div className="campos w-100 p-5">
                             <div style={{ width: '100%' }}>
                                 <div className="inputField d-flex align-items-start flex-column py-3">
