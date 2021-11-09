@@ -61,6 +61,9 @@ export default function CardTime(props) {
 					<form class="escopo-popup" onSubmit={(e) => editarTime(e)}>
 						<a id="close" onClick={(e) => {
 							e.preventDefault();
+							setTime(props.time)
+							setDataCriacao(props.dataCriacao)
+							setCEP(props.CEP)
 							setIsEdit(false)
 						}} />
 						<div className="campos w-100 p-5">
